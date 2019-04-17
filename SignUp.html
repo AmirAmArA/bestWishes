@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+<style>
+
+body{
+		color: #fff;
+		background: #63738a;
+		font-family: 'Roboto', sans-serif;
+	}
+    .form-control{
+		height: 40px;
+		box-shadow: none;
+		color: #969fa4;
+	}
+	.form-control:focus{
+		border-color: #5cb85c;
+	}
+    .form-control, .btn{        
+        border-radius: 3px;
+    }
+	.signup-form{
+		width: 500px;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+	.signup-form h2{
+		color: #636363;
+        margin: 0 0 15px;
+		position: relative;
+		text-align: center;
+    }
+	.signup-form h2:before, .signup-form h2:after{
+		content: "";
+		height: 2px;
+		width: 30%;
+		background: #d4d4d4;
+		position: absolute;
+		top: 50%;
+		z-index: 2;
+	}	
+	.signup-form h2:before{
+		left: 0;
+	}
+	.signup-form h2:after{
+		right: 0;
+	}
+    .signup-form .hint-text{
+		color: #999;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+    .signup-form form{
+		color: #999;
+		border-radius: 3px;
+    	margin-bottom: 15px;
+        background: #f2f3f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+	.signup-form .form-group{
+		margin-bottom: 20px;
+	}
+	.signup-form input[type="checkbox"]{
+		margin-top: 3px;
+	}
+	.signup-form .btn{        
+        font-size: 16px;
+        font-weight: bold;		
+		min-width: 140px;
+        outline: none !important;
+    }
+	.signup-form .row div:first-child{
+		padding-right: 10px;
+	}
+	.signup-form .row div:last-child{
+		padding-left: 10px;
+	}    	
+    .signup-form a{
+		color: #fff;
+		text-decoration: underline;
+	}
+    .signup-form a:hover{
+		text-decoration: none;
+	}
+	.signup-form form a{
+		color: #5cb85c;
+		text-decoration: none;
+	}	
+	.signup-form form a:hover{
+		text-decoration: underline;
+	}  
+
+    .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+    
+    
+}
+.bg-gra-01 {
+
+background: -moz-linear-gradient(to bottom right, #000000 0%, #030303 100%);
+background: -o-linear-gradient( to bottom right, #181717 0%, #3d0303 100%);
+background: linear-gradient(to top right, #000000 20%, #580909 100%);
+}
+
+
+.p-b-100 {
+padding-top: 100px;
+}
+
+.p-t-180 {
+padding-top: 180px;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+}
+li a {
+  color: white;
+  font-family: sans-serif;
+}
+
+</style>
+</head>
+<body  class="page-wrapper bg-gra-01 ">    
+    
+    
+        <nav class="navbar navbar-expand-lg navbar-inverse   ">
+            <div class="container">
+              <a class="navbar-brand" style=" float: left;">
+                    <img src="logo.PNG"  style="width:250px ;height:100px;">
+                  </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div   class="collapse navbar-collapse" id="navbarResponsive">
+                <ul  class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Wishes.html">Wishes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class=" my-4 my-lg-0">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign In</button>
+
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Join</button>
+              </div>
+            </div>
+          </nav>
+
+          <div  > 
+              <div class="row">
+                  <br><br>
+                  <br><br>
+                  <br><br>
+                  <!--    DONT CHANGE THIS ROW!!!!!   -->
+              </div>
+              <div class="row">
+                  <div class="col-md-4"> </div>
+                  <div class="col-md-4">
+                        <div class="signup-form">
+                                <form action="/examples/actions/confirmation.php" method="post">
+                                    <h2>Register</h2>
+                                    <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                                            <div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                                        </div>        	
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                                    </div>        
+                                    <div class="form-group">
+                                        <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+                                    </div>
+                                </form>
+                                <div class="text-center">Already have an account? <a href="signin.html">Sign in</a></div>
+                            </div>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+
+
+                </div>
+                
+                <div class="row">
+                        <!--    DONT CHANGE THIS ROW!!!!!   -->
+                    </div>
+            </div>
+      
+
+
+          
+      
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+     crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+     crossorigin="anonymous"></script>
+    
+     <script>
+     (()=>{
+     let createEvent = document.getElementById("#createEvent");
+     let addWish =  document.getElementById("#addWish");
+
+    })();
+
+    createEvent.addEventListener('click' , ()=>{
+       // console.log("hello to create event");
+       // we should move to the registration page from here so the Visitor can register and create event
+
+    });
+
+    addWish.addEventListener('click' , ()=>{
+       // console.log("hello to Add Wish");
+       // here we should move to page where we search for events and add a wish
+
+    });
+
+//-------------- function to check if we can move to the next page-flags func
+
+
+
+
+     </script>
+</body>
+</html>
