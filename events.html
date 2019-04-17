@@ -8,7 +8,8 @@
     <title>Events</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
 <style>
     .navbar-nav {
     float:none;
@@ -20,16 +21,78 @@
 .navbar-nav > li {
     display: inline-block;
     float:none;
+    
+    
+}
+.bg-gra-01 {
+
+background: -moz-linear-gradient(to bottom right, #000000 0%, #030303 100%);
+background: -o-linear-gradient( to bottom right, #181717 0%, #3d0303 100%);
+background: linear-gradient(to top right, #000000 20%, #580909 100%);
+}
+
+
+.p-b-100 {
+padding-top: 100px;
+}
+
+.p-t-180 {
+padding-top: 180px;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+}
+li a {
+  color: white;
+  font-family: sans-serif;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    box-sizing: border-box;
+    background-color:rgb(243, 238, 230);
+    border: 1px solid rgb(54, 10, 10);
+}
+.card{
+  -webkit-box-direction: normal;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
 }
 
 </style>
 </head>
-<body>
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+<body  class="page-wrapper bg-gra-01 ">    
+    
+      
+        <nav class="navbar navbar-expand-lg navbar-inverse   ">
             <div class="container">
-              <a class="navbar-brand" href="#">
-                    <img src="http://placehold.it/150x50?text=Logo" alt="">
+              <a class="navbar-brand" style=" float: left;">
+                    <img src="logo.PNG"  style="width:350px ;height:100px;">
                   </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -58,7 +121,97 @@
               </div>
             </div>
           </nav>
-</div>
+
+          <div  > 
+            <div class="row">
+              <div class="col-md-2"> <span style="color:white">Event ID </span></div>
+              <div class="col-md-2"><span style="color:white">Category</span></div>
+              <div class="col-md-3"><span style="color:white">Start Date</span> </div>
+              <div class="col-md-3"><span style="color:white">End Date</span> </div>
+              <div class="col-md-2"><span style="color:white">Event Location</span> </div>
+              
+
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <input class="form-control" type="text" placeholder="Enter Event ID">
+                </div>
+                <div class="col-md-2" >
+                    <div class="btn-group  btn-group-md " >
+                        <button type="button" class="btn btn-light  btn dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Choose Category      
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-center">
+                          <button class="dropdown-item" type="button">Birthday</button>
+                          <button class="dropdown-item" type="button">Wedding</button>
+                          <button class="dropdown-item" type="button">New Born</button>
+                        </div>
+                       </div>
+                </div>    
+
+                <div class="col-md-3">
+                  
+                    <input  class="form-control" type="date" name="bday">
+                </div>
+                <div class="col-md-3">
+                    
+                      <input  class="form-control" type="date" name="bday">
+                  </div>
+                <div class="col-md-2">
+                    <input class="form-control" type="text" placeholder="Event Location">
+                </div>
+
+                  <br><br>
+                  
+                  
+                  <!--    DONT CHANGE THIS ROW!!!!!   -->
+              </div>
+              <div class="row">
+                  <div class="col-md-2">
+                      
+                  </div>
+                  <div class="col-md-7">
+                        
+
+                        
+                    </div>
+                    <div class="col-md-3">
+                        <br><br>
+                      <button  id="searchEventbtn" type="button" class="btn btn-outline-info">Search Event</button>
+                    </div>
+
+
+                </div>
+                
+                <div class="row">
+                        <div class="col-md-3">
+                          
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
+                                <h4 class="card-title">Sunlimetech</h4>
+                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                <button  id="searchEventbtn" type="button" class="btn btn-outline-info">Add Wish</button>
+
+                            </div>
+                          </div>
+                            <div class="col-md-3">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
+                                <h4 class="card-title">Sunlimetech</h4>
+                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                <button  id="searchEventbtn" type="button" class="btn btn-outline-info">Delete</button>
+
+                                <button  id="searchEventbtn" type="button" class="btn btn-outline-info">Edit</button>
+
+
+                            </div>
+                          </div>
+                        
+                    </div>
+            </div>
+      
+
+
           
       
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -70,6 +223,34 @@
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
      crossorigin="anonymous"></script>
+
+
     
+    
+     <script>
+    //  (()=>{
+    //  let createEvent = document.getElementById("#createEvent");
+    //  let addWish =  document.getElementById("#addWish");
+
+    // })();
+
+    // createEvent.addEventListener('click' , ()=>{
+    //    // console.log("hello to create event");
+    //    // we should move to the registration page from here so the Visitor can register and create event
+
+    // });
+
+    addWish.addEventListener('click' , ()=>{
+       // console.log("hello to Add Wish");
+       // here we should move to page where we search for events and add a wish
+
+    });
+
+//-------------- function to check if we can move to the next page-flags func
+
+
+
+
+     </script>
 </body>
 </html>
