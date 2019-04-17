@@ -88,11 +88,11 @@ img {
 </head>
 <body  class="page-wrapper bg-gra-01 ">    
     
-    
+      
         <nav class="navbar navbar-expand-lg navbar-inverse   ">
             <div class="container">
               <a class="navbar-brand" style=" float: left;">
-                    <img src="logo.PNG"  style="width:250px ;height:100px;">
+                    <img src="logo.PNG"  style="width:350px ;height:100px;">
                   </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -124,50 +124,42 @@ img {
 
           <div  > 
             <div class="row">
+              <div class="col-md-2"> <span style="color:white">Event ID </span></div>
+              <div class="col-md-2"><span style="color:white">Category</span></div>
+              <div class="col-md-3"><span style="color:white">Start Date</span> </div>
+              <div class="col-md-3"><span style="color:white">End Date</span> </div>
+              <div class="col-md-2"><span style="color:white">Event Location</span> </div>
+              
+
+            </div>
+            <div class="row">
                 <div class="col-md-2">
                     <input class="form-control" type="text" placeholder="Enter Event ID">
                 </div>
-                <div class="col-md-3">
-                    <span style="color:white">Category</span>
-                    <select class="mdb-select">
-                        <!-- <option value="" disabled>Choose option</option> -->
-                        <option value="1" selected>Birthday</option>
-                        <option value="2">Wedding</option>
-                        <option value="3" selected>New born</option>
-
-                       
-                    </select>
+                <div class="col-md-2" >
+                    <div class="btn-group  btn-group-md " >
+                        <button type="button" class="btn btn-light  btn dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Choose Category      
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-center">
+                          <button class="dropdown-item" type="button">Birthday</button>
+                          <button class="dropdown-item" type="button">Wedding</button>
+                          <button class="dropdown-item" type="button">New Born</button>
+                        </div>
+                       </div>
                 </div>    
 
-                <div class="col-md-2">
-                  <span style="color:white">Start Date</span> <br>
-                    <input type="date" name="bday">
-                </div>
-                <div class="col-md-2">
-                    <span style="color:white">End Date</span> <br>
-                      <input type="date" name="bday">
-                  </div>
                 <div class="col-md-3">
-                  <div class="container">
-                    <div class="row">
-                        <div class='col-sm-6'>
-                            <div class="form-group">
-                                <div class='input-group date' id='datetimepicker1'>
-                                    <input type='text' class="form-control" />
-                                    <span class="input-group-addon">
-                                        <span class="glyphicon glyphicon-calendar"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <script type="text/javascript">
-                            $(function () {
-                                $('#datetimepicker1').datetimepicker();
-                            });
-                        </script>
-                    </div>
-                </div>                
-              </div>
+                  
+                    <input  class="form-control" type="date" name="bday">
+                </div>
+                <div class="col-md-3">
+                    
+                      <input  class="form-control" type="date" name="bday">
+                  </div>
+                <div class="col-md-2">
+                    <input class="form-control" type="text" placeholder="Event Location">
+                </div>
 
                   <br><br>
                   
@@ -185,7 +177,7 @@ img {
                     </div>
                     <div class="col-md-3">
                         <br><br>
-                      <button  id="addWish" type="button" class="btn btn-outline-info">Search Event</button>
+                      <button  id="searchEventbtn" type="button" class="btn btn-outline-info">Search Event</button>
                     </div>
 
 
@@ -193,7 +185,7 @@ img {
                 
                 <div class="row">
                         <div class="col-md-3">
-                          <br><br><br><br>
+                          
                             <div class="card-body text-center">
                                 <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
                                 <h4 class="card-title">Sunlimetech</h4>
@@ -233,6 +225,7 @@ img {
      crossorigin="anonymous"></script>
 
 
+    
     
      <script>
     //  (()=>{
