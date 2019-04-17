@@ -8,7 +8,8 @@
     <title>Events</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
 <style>
     .navbar-nav {
     float:none;
@@ -59,6 +60,8 @@ li a {
     flex: 1 1 auto;
     padding: 1.25rem;
     box-sizing: border-box;
+    background-color:rgb(243, 238, 230);
+    border: 1px solid rgb(54, 10, 10);
 }
 .card{
   -webkit-box-direction: normal;
@@ -195,9 +198,23 @@ img {
                                 <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
                                 <h4 class="card-title">Sunlimetech</h4>
                                 <p class="card-text">This is basic card with image on top, title, description and button.</p>
-                                
+                                <button  id="searchEventbtn" type="button" class="btn btn-outline-info">Add Wish</button>
+
                             </div>
-                        </div>
+                          </div>
+                            <div class="col-md-3">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
+                                <h4 class="card-title">Sunlimetech</h4>
+                                <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                                <button  id="searchEventbtn" type="button" class="btn btn-outline-info">Delete</button>
+
+                                <button  id="searchEventbtn" type="button" class="btn btn-outline-info">Edit</button>
+
+
+                            </div>
+                          </div>
+                        
                     </div>
             </div>
       
@@ -214,6 +231,8 @@ img {
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
      crossorigin="anonymous"></script>
+
+
     
      <script>
     //  (()=>{
