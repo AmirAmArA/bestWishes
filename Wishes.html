@@ -5,49 +5,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Wishes</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <style>
-        #menu-outer {
-            height: 84px;
+        .navbar-nav {
+            float: none;
             margin: 0 auto;
-            width: 100px;
+            display: block;
+            text-align: center;
         }
 
-        .table {
-            display: table;
-            /* Allow the centering to work */
-            margin: 0 auto;
+        .navbar-nav>li {
+            display: inline-block;
+            float: none;
+
+
         }
 
-        ul#horizontal-list {
-            min-width: 696px;
-            list-style: none;
-            padding-top: 20px;
+
+
+        .bg-gra-01 {
+
+            background: -moz-linear-gradient(to bottom right, #000000 0%, #030303 100%);
+            background: -o-linear-gradient(to bottom right, #181717 0%, #3d0303 100%);
+            background: linear-gradient(to top right, #000000 20%, #580909 100%);
         }
 
-        ul#horizontal-list li {
-            display: inline;
+
+        .p-b-100 {
+            padding-top: 100px;
+        }
+
+        .p-t-180 {
+            padding-top: 180px;
+        }
+
+        .page-wrapper {
+            min-height: 100vh;
+        }
+
+        li a {
+            color: white;
+            font-family: sans-serif;
         }
     </style>
-
 </head>
 
-<body>
-    <div id="menu-outer">
-        <div class="table">
-            <ul id="horizontal-list">
-                <li><a href="Home.html">Home</a> | </li>
-                <li><a href="Events.html">Events</a> | </li>
-                <li><a href="Wishes.html">Wishes</a> | </li>
-                <li><a href="About.html">About</a></li>
-            </ul>
+<body class="page-wrapper bg-gra-01 ">
+
+
+    <nav class="navbar navbar-expand-lg navbar-inverse   ">
+        <div class="container">
+            <a class="navbar-brand" style=" float: left;">
+                <img src="logo.PNG" style="width:250px ;height:100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Evemts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Wishes.html">Wishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class=" my-4 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign In</button>
+
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Join</button>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div class="row">
+            <br><br>
+            <br><br>
+            <br><br>
+
+            <nav class="navbar navbar-light bg-darck">
+                <form class="form-inline">
+                    <ul style="list-style-type: none">
+                            <li class="nav-item active">
+                                    <a style="color:rgb(160, 96, 96)" class="navbar-brand">ID:</a>
+                                    <a style="color:rgba(116, 160, 96, 0.89)" class="navbar-brand" id="eId">Event ID</a>
+                                </li>
+                        <li class="nav-item active">
+                            <a style="color:rgb(160, 96, 96)" class="navbar-brand">Title:</a>
+                            <a style="color:rgba(116, 160, 96, 0.89)" class="navbar-brand" id="eTitle">Event title</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a style="color:rgb(160, 96, 96)" class="navbar-brand">When:</a>
+                            <a style="color:rgba(116, 160, 96, 0.89)" class="navbar-brand" id="eTime">Event time</a>
+                        </li>
+
+                        <li class="nav-item active">
+                            <a style="color:rgb(160, 96, 96)" class="navbar-brand">Where:</a>
+                            <a style="color:rgba(116, 160, 96, 0.89)" class="navbar-brand" id="eLocation">Eventlocation</a>
+                        </li>
+                </form>
+            </nav>
+
+            <br><br>
+            <br><br>
+            <br><br>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4"> </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"><button type="button" class="btn btn-outline-success">Add a Best Wish</button></div>
+        </div>
+
+        <div class="row">
+
         </div>
     </div>
-    <div>
-        <p>Wishes page</p>
-    </div>
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -59,6 +150,11 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <script>
+
+
+
+    </script>
 </body>
 
 </html>
