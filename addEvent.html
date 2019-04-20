@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Add a wish</title>
+    <title>Add event</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -49,7 +49,7 @@
       .page-wrapper {
         min-height: 100vh;
       }
-      li a {
+     li > a {
         color: white;
         font-family: sans-serif;
       }
@@ -82,11 +82,11 @@
             <li class="nav-item ">
               <a class="nav-link" href="home.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
+            <li class="nav-item ">
+              <a class="nav-link" href="MyEvents.html"> My Events</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link active" href="#">Wishes</a>
+            <li class="nav-item">
+              <a class="nav-link" href="addAwish.html">Wishes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -94,13 +94,7 @@
           </ul>
         </div>
         <div class=" my-4 my-lg-0">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Sign In
-          </button>
-
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Join
-          </button>
+          <span style="color:white">Hi,Kristina </span>
         </div>
       </div>
     </nav>
@@ -108,23 +102,41 @@
     <div class="row">
       <br />
       <br />
-      <br />
-      <br />
     </div>
+<div class="row">
+<div class="col-md-1">
 
-    <div class="row">
-      <div class="col-md-4"></div>
+</div>
+<div class="col-md-10">
+    <div class="card mb-3" style="background-color: #8d304104;">
+        <div class="card-body"> 
+          <div class="row">
+      <div class="col-md-4">
+
+        
+      </div>
       <div class="col-md-4">
         <div class="row">
-          <div class="col-md-3">
-            <span style="color:white">From </span>
+          <div class="col-md-4">
+            <span style="color:white">Category</span>
           </div>
-          <div class="col-md-9">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Enter you're name"
-            />
+          <div class="col-md-8">
+            <div class="btn-group  btn-group-md ">
+              <button
+                type="button"
+                class="btn btn-light  btn dropdown-toggle "
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Choose Category
+              </button>
+              <div class="dropdown-menu dropdown-menu-center">
+                <button class="dropdown-item" type="button">Birthday</button>
+                <button class="dropdown-item" type="button">Wedding</button>
+                <button class="dropdown-item" type="button">New Born</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -134,19 +146,15 @@
     <div class="row">
       <div class="col-md-4"></div>
       <div class="col-md-4">
-          <br>
+        <br />
         <div class="row">
-          <div class="col-md-3">
-            <span style="color:white">Wish you </span>
+          <div class="col-md-4">
+            <span style="color:white">Title</span>
           </div>
-          <div class="col-md-9">
+          <div class="col-md-8">
             <div class="form-group">
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea3"
-                rows="7"
-                placeholder="Write you're wish"
-              ></textarea>
+              <input class="form-control" type="text" placeholder="write event title" />
+
             </div>
           </div>
         </div>
@@ -157,25 +165,88 @@
       <div class="col-md-4"></div>
       <div class="col-md-4">
         <div class="row">
-          <div class="col-md-3">
-            <span style="color:white">Image </span>
+          <div class="col-md-4">
+            <span style="color:white">Start Date </span>
           </div>
-          <div class="col-md-9">
-            <input class="form-control" type="text" placeholder="URL" />
+          <div class="col-md-8">
+            <input  class="form-control" type="date" name="date">
+            <br>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+      </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-4">
+              <span style="color:white">End Date </span>
+            </div>
+            <div class="col-md-8">
+              <input  class="form-control" type="date" name="date">
+              <br>
+  
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+  
+      </div>
+      
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-4">
+            <span style="color:white">Where </span>
+          </div>
+          <div class="col-md-8">
+            <input class="form-control" type="text" placeholder="where is your event??" />
           </div>
         </div>
       </div>
       <div class="col-md-4"></div>
     </div>
+    
     <div class="row">
-      <div class="col-md-4"></div>
-      <div class="col-md-4"></div>
+      <div class="col-md-4"> 
+       
+      </div>
       <div class="col-md-4">
-        <button id="searchEventbtn" type="button" class="btn btn-outline-warning">
-          Add a wish
-        </button>
+        <div class="row">
+        <div class="col-md-6">
+          <br>
+            <button id="searchEventbtn" type="button" class="btn btn-outline-info">
+                My Events
+              </button>
+        </div>
+        <div class="col-md-6">
+          <br>
+            <button id="searchEventbtn" type="button" class="btn btn-outline-info">
+                Create event box 
+              </button>
+        </div>
+        </div>
+       
+      </div>
+      <div class="col-md-4">
       </div>
     </div>
+    </div>
+</div>
+<div class="col-md-1">
+
+  </div>
+</div>
+    
+<!-- -> -->
+   
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

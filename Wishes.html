@@ -50,16 +50,21 @@
             color: white;
             font-family: sans-serif;
         }
+        body {
+  font-family:sans-serif ; 
+  font-size:1.2em;
+
+}
     </style>
 </head>
 
 <body class="page-wrapper bg-gra-01 ">
 
 
-    <nav class="navbar navbar-expand-lg navbar-inverse   ">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7c3b4700;" >
         <div class="container">
             <a class="navbar-brand" style=" float: left;">
-                <img src="logo.PNG" style="width:250px ;height:100px;">
+                    <img src="logo.PNG"  style="width:200px ;height:50px;">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,14 +72,14 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">Evemts</a>
+                        <a class="nav-link" href="events.html">Events</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Wishes.html">Wishes</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="addAwish.html">Wishes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -84,7 +89,6 @@
             </div>
             <div class=" my-4 my-lg-0">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign In</button>
-
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Join</button>
             </div>
         </div>
@@ -93,48 +97,140 @@
     <div>
         <div class="row">
             <br><br>
-            <br><br>
-            <br><br>
+            
 
-            <nav class="navbar navbar-light bg-darck">
-                <form class="form-inline">
-                    <ul style="list-style-type: none">
-                            <li class="nav-item active">
-                                    <a style="color:rgb(160, 96, 96)" class="navbar-brand">ID:</a>
-                                    <a style="color:rgba(116, 160, 96, 0.89)" class="navbar-brand" id="eId">Event ID</a>
-                                </li>
-                        <li class="nav-item active">
-                            <a style="color:rgb(160, 96, 96)" class="navbar-brand">Title:</a>
-                            <a style="color:rgba(116, 160, 96, 0.89)" class="navbar-brand" id="eTitle">Event title</a>
-                        </li>
-
-                        <li class="nav-item active">
-                            <a style="color:rgb(160, 96, 96)" class="navbar-brand">When:</a>
-                            <a style="color:rgba(116, 160, 96, 0.89)" class="navbar-brand" id="eTime">Event time</a>
-                        </li>
-
-                        <li class="nav-item active">
-                            <a style="color:rgb(160, 96, 96)" class="navbar-brand">Where:</a>
-                            <a style="color:rgba(116, 160, 96, 0.89)" class="navbar-brand" id="eLocation">Eventlocation</a>
-                        </li>
-                </form>
-            </nav>
-
-            <br><br>
-            <br><br>
-            <br><br>
-
-        </div>
-        <div class="row">
-            <div class="col-md-4"> </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"><button type="button" class="btn btn-outline-success">Add a Best Wish</button></div>
         </div>
 
         <div class="row">
+            <div class="col-md-3">
+                    <div class="card border-info mb-3" style="max-width: 18rem; background-color: #55152213;">
+                            <div class="card-header border-info" style="color:white">Event Info</div>
+                            <div class="card-body text-light">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                     <span>Title:</span>
+                                    </div>
+                                    <div class="col-md-6">
 
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                        <div class="col-md-6">
+                                         <span>When:</span>
+                                        </div>
+                                        <div class="col-md-6">
+    
+                                        </div>
+    
+                                    </div>
+                                    <div class="row">
+                                            <div class="col-md-6">
+                                             <span>Where:</span>
+                                            </div>
+                                            <div class="col-md-6">
+        
+                                            </div>
+                                        </div>                 
+             </div>
+
+            </div>
+            <div class="row">
+                    <div class="col-md-12">
+                           <button type="button" class="btn btn-outline-warning">Add a Best Wish !!</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 "style="overflow-y: scroll; height:400px;">
+                <div class="row">
+                    <div class="col-md-4"><div class="card border-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Wish1</div>
+                            <div class="card-body">
+                                    <img src="logo.PNG" class="card-img-top" >
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div></div>
+                    <div class="col-md-4"><div class="card border-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Wish3</div>
+                            <div class="card-body">
+                                    <img src="logo.PNG" class="card-img-top" >
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div></div>
+                    <div class="col-md-4"><div class="card border-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Wish2</div>
+                            <div class="card-body">
+                                    <img src="logo.PNG" class="card-img-top" >
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div></div>
+
+                </div>
+                <div class="row">
+                        <div class="col-md-4"><div class="card border-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Wish 1</div>
+                                <div class="card-body">
+                                        <img src="logo.PNG" class="card-img-top" >
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div></div>
+                        <div class="col-md-4"><div class="card border-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Wish2</div>
+                                <div class="card-body">
+                                        <img src="logo.PNG" class="card-img-top" >
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div></div>
+                        <div class="col-md-4"><div class="card border-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Wish3</div>
+                                <div class="card-body">
+                                        <img src="logo.PNG" class="card-img-top" >
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                              </div>
+                            </div>
+    
+                    </div>
+                    <div class="row">
+                            <div class="col-md-4"><div class="card border-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Wish 1</div>
+                                    <div class="card-body">
+                                            <img src="logo.PNG" class="card-img-top" >
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div></div>
+                            <div class="col-md-4"><div class="card border-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Wish2</div>
+                                    <div class="card-body">
+                                            <img src="logo.PNG" class="card-img-top" >
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div></div>
+                            <div class="col-md-4"><div class="card border-light mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">Wish3</div>
+                                    <div class="card-body">
+                                            <img src="logo.PNG" class="card-img-top" >
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div>
+                                </div>
+        
+                        </div>
+                </div>
+            </div>
+            
         </div>
-    </div>
+                    
+              
+                   
+                   
+                    
+
+
+
+    
+         
 
 
 

@@ -5,50 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>About</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        #menu-outer {
-            height: 84px;
-            margin: 0 auto;
-            width: 100px;
-        }
+      
+<style>
+    .navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
 
-        .table {
-            display: table;
-            /* Allow the centering to work */
-            margin: 0 auto;
-        }
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+    
+    
+}
+.bg-gra-01 {
 
-        ul#horizontal-list {
-            min-width: 696px;
-            list-style: none;
-            padding-top: 20px;
-        }
+background: -moz-linear-gradient(to bottom right, #000000 0%, #030303 100%);
+background: -o-linear-gradient( to bottom right, #181717 0%, #3d0303 100%);
+background: linear-gradient(to top right, #000000 20%, #580909 100%);
+}
 
-        ul#horizontal-list li {
-            display: inline;
-        }
-    </style>
 
+.p-b-100 {
+padding-top: 100px;
+}
+
+.p-t-180 {
+padding-top: 180px;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+}
+li a {
+  color: white;
+  font-family: sans-serif;
+}
+body {
+  font-family:sans-serif ; 
+  font-size:1.2em;
+
+}
+</style>
 </head>
-<body>
-        <div id="menu-outer">
-                <div class="table">
-                    <ul id="horizontal-list">
-                        <li><a href="Home.html">Home</a> | </li>
-                        <li><a href="Events.html">Events</a> | </li>
-                        <li><a href="Wishes.html">Wishes</a> | </li>
-                        <li><a href="About.html">About</a></li>
-                    </ul>
-                </div>
+<body  class="page-wrapper bg-gra-01 ">    
+    
+    
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7c3b4700;   ">
+            <div class="container">
+              <a class="navbar-brand" style=" float: left;">
+                  <img src="logo.PNG"  style="width:200px ;height:50px;">
+                </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div   class="collapse navbar-collapse" id="navbarResponsive">
+                <ul  class="navbar-nav ml-auto">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="addAwish.html">Wishes</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class=" my-4 my-lg-0">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign In</button>
+
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Join</button>
+              </div>
             </div>
-     <h1>about </h1>
-     <p>
-         hello every body my web site is making for pepole who want to give another pepole 
-         a wish and save it without lose it for many years
-     </p>
+          </nav>
+
+          <div  > 
+              <div class="row">
+                  <br><br>
+                  
+                  <!--    DONT CHANGE THIS ROW!!!!!   -->
+              </div>
+             <div class="row">
+                 <div class="col-md-12">
+                 <p style="color:white">  this paragraph should describe briefly our system (to update it later)</p>
+             </div>
+            </div>
+             <div class="row">
+                    <div class="col-md-12">
+                 <p  style="color:white">here we r adding cards for each member</p>
+                </div>
+             </div>
+
+
+          
+      
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
      crossorigin="anonymous"></script>
@@ -58,5 +118,31 @@
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
      crossorigin="anonymous"></script>
+    
+     <script>
+     (()=>{
+     let createEvent = document.getElementById("#createEvent");
+     let addWish =  document.getElementById("#addWish");
+
+    })();
+
+    createEvent.addEventListener('click' , ()=>{
+       // console.log("hello to create event");
+       // we should move to the registration page from here so the Visitor can register and create event
+
+    });
+
+    addWish.addEventListener('click' , ()=>{
+       // console.log("hello to Add Wish");
+       // here we should move to page where we search for events and add a wish
+
+    });
+
+//-------------- function to check if we can move to the next page-flags func
+
+
+
+
+     </script>
 </body>
 </html>
